@@ -1,0 +1,151 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.clearfix:after {
+	display: table;
+	content: "";
+	clear: both;
+}
+
+body {
+	width: 100%;
+	max-width: 600px;
+	font: normal 16px Helvetica, Arial, sans-serif;
+	background: #fff;
+	border: 2px solid #000;
+	padding: 10px;
+	margin: 10px;
+}
+
+header h1 {
+	font-size: 50px;
+}
+
+header > p {
+	font-size: 26px;
+}
+
+header dl, header h2 {
+	font-size: 24px;
+	padding: 9px 0;
+}
+
+header h2 {
+	margin: 4px 0;
+	border-top: 30px solid #000;
+	border-bottom: 1px solid #000;
+}
+
+header dl {
+	width: 50%;
+	float: left;
+	border-bottom: 10px solid #000;
+	margin-bottom: 5px;
+	box-sizing: border-box;
+}
+
+header dt, header dd {
+	display: inline;
+}
+
+header > dl:first-of-type dt {
+	font-weight: bold;
+}
+
+header dl + dl {
+	text-align: right;
+}
+
+.main-table, .second-table {
+	border-collapse: collapse;
+}
+
+.main-table th, .main-table td {
+	text-align: right;
+	width: 100%;
+	font-size: 26px;
+	padding: 5px;
+}
+
+.main-table td {
+	font-weight: bold;
+	text-align: left;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	padding: 2px;
+}
+
+.main-table td.indent {
+	width: 35px;
+	border: none;
+}
+
+.main-table td.indent + td {
+	font-weight: normal;
+}
+
+.main-table td + td:last-child {
+	text-align: right;
+}
+
+.main-table td.indent + td:last-child {
+	text-align: left;
+}
+
+.main-table .grams {
+	font-weight: normal;
+}
+
+tbody.first tr:last-child {
+	border-bottom: 20px solid #000;
+}
+
+tbody.second td:first-child {
+	font-weight: normal;
+}
+
+.main-table + p {
+	font-size: 22px;
+	padding: 20px 10px;
+	text-align: justify;
+}
+
+.main-table + p::before {
+	content: "*";
+	float: left;
+	padding: 0 5px 0 0;
+	height: 55px;
+}
+
+.second-table {
+	width: 100%;
+}
+
+.second-table th, .second-table td {
+	text-align: left;
+	font-size: 20px;
+	padding: 2px 5px;
+}
+
+.second-table thead th {
+	width: 21%;
+	font-weight: normal;
+	border-bottom: 1px solid #000;
+	padding: 0;
+}
+
+.second-table thead tr th:first-child {
+	width: 35%;
+}
+
+.second-table tbody tr:nth-child(2) td:first-child,
+.second-table tbody tr:last-child td:first-child{
+	padding-left: 35px;
+}
+
+
